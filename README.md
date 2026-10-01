@@ -51,3 +51,13 @@ MIT — use it, modify it, ship it. If it saves you from a red ocean, that's the
 ---
 
 *Maintained by zengyu199009 · Built from 8 weeks of real market monitoring practice*
+
+## Want the PRO version?
+
+The **PRO pack** adds:
+- Real niche-density data (7 long-tail directions measured, Sept 2026) — the "answers"
+- Automated competitor-check script (one command, no API key)
+- Chinese version of the skill
+- Updates over time
+
+👉 **Get PRO on MCP Market: https://mcpmarket.com/sellers/zengyu199**
