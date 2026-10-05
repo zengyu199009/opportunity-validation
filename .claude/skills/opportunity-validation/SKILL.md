@@ -1,7 +1,7 @@
 ---
 name: opportunity-validation
 description: "Evaluate any business/product idea by checking competitor density FIRST — before you build. Outputs a decision-ready opportunity list with background, use cases, competitor analysis, and monetization path. Built for solo founders, indie hackers, and anyone evaluating AI/SaaS opportunities."
-version: 1.3.0
+version: 1.5.0
 author: zengyu199009
 license: MIT
 metadata:
@@ -49,6 +49,14 @@ Collect inputs before evaluating — ask if missing, avoid drift:
 
 ### 1. Collect candidate directions
 Gather demand signals from anywhere: complaint mining, Reddit, Hacker News, GitHub, marketplaces, your own experience. No filtering at this stage.
+
+**Scan with the 4 high-value complaint signals (v1.5):**
+- ① "Too expensive, is there an alternative?" → price-sensitive demand (build a lighter/cheaper version)
+- ② "I have to do this manually every time" → automation opportunity (users already pay to save time)
+- ③ "I only need one small feature" → sub-scenario inside a big tool (often ignored)
+- ④ "I tried several tools and nothing works" → existing solutions fail (best entry point for a new product)
+
+**Anti-noise rule (v1.5): a single complaint is just a clue — only follow up when the same signal appears 3+ times (different people/posts).**
 
 ### 2. Check competitor density for EVERY direction (mandatory — even if nobody asked)
 
@@ -131,6 +139,7 @@ This skill does NOT do: replacement for customer interviews / real-user validati
 - BetaList: use web_extract (curl only gets the shell)
 - Hugging Face Spaces (6th signal source): `https://huggingface.co/spaces?sort=likes&category=financial-analysis` (also document-analysis / ocr categories + weekly new Spaces). MUST use web_extract (direct API/curl times out). Only look at commercial tool-type Spaces (cross-border payout calculators, vertical document structuring, industry OCR). ⚠️ HF is a model demo community with weak payment signals — Space popularity ≠ payment evidence, treat as a demand hint only.
 - Competitor prices/user counts: official pricing pages + tracxn/otterly-type comparison articles + OMR/authoritative lists
+- Freelance platforms (v1.5): Upwork / 程序员客栈 (Programmer Inn) — the "closest to money" willingness-to-pay check (clients already voted with budget). Same task type appearing weekly = standardizable into a product; once in a while = one-off service. ⚠️ Upwork has signup/payout barriers for mainland-China individuals; listed budget ≠ actual deal (verify with one real conversation)
 - Mark data blind spots honestly: Product Hunt direct / X / V2EX / 36kr / huxiu are often blocked
 
 ## References
